@@ -1,7 +1,7 @@
 .box{
-  background-color: #1ea9ee;
-  margin: 2% auto;
+  margin: auto;
   width: 70%;
+  padding: 2%;
 }
 body{
   background-repeat: no-repeat;
@@ -10,7 +10,17 @@ body{
   background-image: linear-gradient(160deg,#ec4ecd,rgb(232, 222, 235), #1b2c9e);
 }
 
-img{
+/*img{
   max-width: 100%;
   height: auto;
+}*/
+
+#catphoto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#math{
+  padding-top: 50px;
+  font-size: 20px;
 }

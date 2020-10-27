@@ -19,6 +19,7 @@ function showMath(){
   xhttp.onreadystatechange = function(){
     if (this.status==200 && this.readyState ==4 ){
       document.getElementById("math").innerHTML= this.responseText;
+      console.log(this.responseText);
     }
   };
   xhttp.open("GET",urlmath,true);

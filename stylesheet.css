@@ -11,8 +11,8 @@ body{
 }
 
 img{
-  max-width: 100%;
-  height: auto;
+  max-width: 50%;
+  max-height: 400px;
 }
 
 #catphoto{
@@ -20,7 +20,7 @@ img{
   justify-content: center;
   align-items: center;
 }
-#math{
-  padding-top: 50px;
+#quote{
+  padding-top: 40px;
   font-size: 20px;
 }

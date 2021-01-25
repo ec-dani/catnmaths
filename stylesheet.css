@@ -3,6 +3,10 @@
   width: 70%;
   padding: 2%;
 }
+h1{
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
 body{
   margin: 0;
   background-repeat: no-repeat;
@@ -29,6 +33,7 @@ img{
   padding-top: 40px;
   font-size: 15px;
 }
+
 #author{
-  font-size: 13px;
+  font-size: 12px;
 }

@@ -17,6 +17,7 @@ img{
   margin-right: auto;
   margin-left: auto;
   max-width: 400px;
+  padding-top: 60px;
 }
 
 /*#catphoto{
@@ -26,5 +27,8 @@ img{
 }*/
 #quote{
   padding-top: 40px;
-  font-size: 20px;
+  font-size: 15px;
+}
+#author{
+  font-size: 13px;
 }

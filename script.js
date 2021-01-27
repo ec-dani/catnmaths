@@ -12,20 +12,19 @@ function showCat(){
   };
   xhttp.open("GET",urlCat,true);
   xhttp.send();
-}
-
-function showBbquote(){
-  const xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function(){
-    if (this.status==200 && this.readyState ==4 ){
-      let data = JSON.parse(this.responseText);
-      document.getElementById("quote").innerHTML= data[0].quote;
-      document.getElementById("author").innerHTML = data[0].author;
-    }
-  };
-  xhttp.open("GET",urlBbquote,true);
-  xhttp.send();
-}
+};
+$.get('https://type.fit/api/quotes', function(response){
+  let data= JSON.parse(response);
+  let random= Math.floor( Math.random()*(1643))
+  console.log(random)
+  $('#quote').html(
+    data[random].text
+  );
+  console.log(random)
+  $('#author').html(
+    data[random].author
+  )
+})
 
 showCat();
-showBbquote();
+

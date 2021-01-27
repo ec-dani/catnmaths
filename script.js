@@ -15,13 +15,12 @@ function showCat(){
 };
 $.get('https://type.fit/api/quotes', function(response){
   let data= JSON.parse(response);
- // let random= Math.floor( Math.random()*(1643))
-  //console.log(random)
+  let random= Math.floor( Math.random()*(1643))
   $('#quote').html(
-    data[1195].text
+    data[random].text
   );
   $('#author').html(
-    data[1195].author
+    data[random].author
   )
 })
 
